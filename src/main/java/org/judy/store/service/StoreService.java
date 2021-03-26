@@ -6,7 +6,7 @@ import org.judy.store.dto.StoreDTO;
 
 public interface StoreService {
 	
-	
+	Store getStore(String mid);
 	
 	default StoreDTO toDTO(Store store) {
 		StoreDTO dto = StoreDTO.builder()

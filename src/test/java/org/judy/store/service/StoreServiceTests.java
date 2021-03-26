@@ -1,9 +1,9 @@
-package org.judy.manager.service;
+package org.judy.store.service;
 
 import org.judy.common.CommonConfig;
-import org.judy.common.util.PageDTO;
 import org.judy.manager.config.ManagerConfig;
 import org.judy.store.config.StoreConfig;
+import org.judy.store.mapper.StoreMapperTests;
 import org.judy.time.config.TimeConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,31 +16,15 @@ import lombok.extern.log4j.Log4j;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = {CommonConfig.class, ManagerConfig.class , TimeConfig.class , StoreConfig.class})
 @Log4j
-public class ManagerServiceTests {
+public class StoreServiceTests {
 
 	@Autowired
-	private ManagerService service;
+	private StoreService service;
 	
 	
 	@Test
-	public void getManagerTest() {
-		
-		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).type(null).keyword(null).build();
-		
-		log.info("------------");
-		log.info(service);
-		log.info(service.getManagerList(pageDTO));
-	}
-	
-	@Test
-	public void testSelectOne() {
-		log.info(service.selectOne("테스트1"));
-	}
-	@Test
-	public void testTotal() {
-		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).type("s").keyword("후").build();
-		log.info(service.totalMan(pageDTO));
-		
+	public void testGetStore() {
+		log.info(service.getStore("user147"));
 	}
 	
 }

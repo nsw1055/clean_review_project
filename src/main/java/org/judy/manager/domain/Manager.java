@@ -25,10 +25,14 @@ public class Manager {
 	
 	String phone;
 	
+	String sname;
+	
 	Boolean enabled,approval;
 	
 	String logoImg;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	Date regdate, updatedate;
+	
+	
 }

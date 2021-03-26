@@ -37,9 +37,9 @@ public class ManagerServiceImpl implements ManagerService {
 	}
 
 	@Override
-	public int totalMan() {
+	public int totalMan(PageDTO pageDTO) {
 		log.info("totalMan..........");
-		return mapper.totalMan();
+		return mapper.totalMan(pageDTO);
 	}
 	
 

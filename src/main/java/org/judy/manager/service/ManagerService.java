@@ -12,7 +12,7 @@ public interface ManagerService {
 	
 	ManagerDTO selectOne(String mid);
 	
-	int totalMan();
+	int totalMan(PageDTO pageDTO);
 	
 	default ManagerDTO toDTO(Manager manager) {
 		ManagerDTO dto = ManagerDTO.builder()
@@ -21,6 +21,7 @@ public interface ManagerService {
 								.email(manager.getEmail())
 								.logoImg(manager.getLogoImg())
 								.phone(manager.getPhone())
+								.sname(manager.getSname())
 								.enabled(manager.getEnabled())
 								.approval(manager.getApproval())
 								.regdate(manager.getRegdate())
@@ -36,6 +37,7 @@ public interface ManagerService {
 							.email(dto.getEmail())
 							.logoImg(dto.getLogoImg())
 							.phone(dto.getPhone())
+							.sname(dto.getSname())
 							.enabled(dto.getEnabled())
 							.approval(dto.getApproval())
 							.regdate(dto.getRegdate())

@@ -14,6 +14,31 @@
 
 					</div>
 					<div class="card-body">
+						<div class="listTop">
+						
+						<div class="selectType">
+								<select class="selectTypeVal custom-select">
+									<option ${"m" == pageDTO.type ? "selected" : "" } value="m">ID</option>
+									<option ${"s" == pageDTO.type ? "selected" : "" } value="s">매장명</option>
+									<option ${"c" == pageDTO.type ? "selected" : "" } value="c">내용</option>
+								</select>
+							</div>
+						
+							<div class="searchList input-group no-border">
+								<input type="text" value="" class="searchValue form-control" placeholder="Search...">
+								<button type="submit" class="searchBtn btn btn-white btn-round btn-just-icon">
+									<i class="material-icons">search</i>
+									<div class="ripple-container"></div>
+								</button>
+							</div>
+							<div class="selectPerSheet">
+								<select class="selectPerSheet custom-select">
+									<option ${10 == pageDTO.perSheet ? "selected" : "" } value="10">10개씩</option>
+									<option ${20 == pageDTO.perSheet ? "selected" : "" } value="20">20개씩</option>
+									<option ${30 == pageDTO.perSheet ? "selected" : "" } value="30">30개씩</option>
+								</select>
+							</div>
+						</div>
 						<div class="table-responsive">
 							<table class="table">
 								<thead class=" text-primary">
@@ -21,22 +46,32 @@
 									<th>ID</th>
 									<th>Email</th>
 									<th>Phone</th>
+									<th>Sname</th>
 									<th>Enabled</th>
-				  					<th>Approval</th>
+									<th>Approval</th>
 									<th>RegDate</th>
 									<th>UpdateDate</th>
 								</thead>
 								<tbody class="tableList">
+								<c:forEach items="${list }" var="manager">
+								<tr>
+								<td><img src= ${manager.logoImg}/></td>
+								<td class="readBtn">${manager.mid}</td>
+								<td>${manager.email}</td>
+								<td>${manager.phone}</td>
+								<td>${manager.sname}</td>
+								<td>${manager.enabled}</td>
+								<td>${manager.approval}</td>
+								<td>${manager.regdate}</td>
+								<td>${manager.updatedate}</td>
+								</tr>
+								</c:forEach>
+								
+								
 								</tbody>
 							</table>
 
-							<div>
-								<select  class="custom-select">
-									<option ${10 == pageDTO.perSheet ? "selected" : "" } value="10">10개씩 보기</option>
-									<option ${20 == pageDTO.perSheet ? "selected" : "" } value="20">20개씩 보기</option>
-									<option ${30 == pageDTO.perSheet ? "selected" : "" } value="30">30개씩 보기</option>
-								</select>
-							</div>
+
 
 							<!-- pagination -->
 							<div>
@@ -71,8 +106,10 @@
 
 
 <form class="actionForm" action="/manager/list" method="get">
-	<input type="hidden" name="page" value="${pageDTO.page}"> <input
-		type="hidden" name="perSheet" value="${pageDTO.perSheet}">
+	<input type="hidden" name="page" value="${pageDTO.page}"> 
+	<input type="hidden" name="perSheet" value="${pageDTO.perSheet}">
+	<input type="hidden" name="type" value="${pageDTO.type}">
+	<input type="hidden" name="keyword" value="${pageDTO.keyword}">
 </form>
 
 
@@ -86,24 +123,26 @@ const actionForm = document.querySelector(".actionForm")
 
 const tableList = document.querySelector(".tableList")
 
-
-
-service.sendList(${pageDTO.page} , ${pageDTO.perSheet}).then(res => res.json()).then(result => {
+/* .then(result => {
 	for (let resultElement of result) {
 		
 		tableList.innerHTML += "<tr><td><img src= '"+resultElement.logoImg+"'></td>" +
 		"<td onclick='sendRead("+JSON.stringify(resultElement.mid)+")'>"+resultElement.mid+"</td>" +
 		"<td>"+resultElement.email+"</td>" +
 		"<td>"+resultElement.phone+"</td>" +
+		"<td>"+resultElement.sname+"</td>" +
 		"<td>"+resultElement.enabled+"</td>" +
 		"<td>"+resultElement.approval+"</td>" +
 		"<td>"+resultElement.regdate+"</td>" +
 		"<td>"+resultElement.updatedate+"</td></tr>"
 	}
+	})
+	 */
 	
-})
+
 
 // pagination
+
 
 document.querySelector(".pagination").addEventListener("click" , function(e){
 	
@@ -125,7 +164,7 @@ document.querySelector(".pagination").addEventListener("click" , function(e){
 
 // persheet
 
-document.querySelector("select").addEventListener("change" , function(e){
+document.querySelector(".selectPerSheet").addEventListener("change" , function(e){
 
 	console.log(e.target.value)
 	
@@ -138,20 +177,55 @@ document.querySelector("select").addEventListener("change" , function(e){
 } , false)
 
 
+//search
+
+document.querySelector(".searchBtn").addEventListener("click", function(e){
+	
+	e.preventDefault()
+	
+	console.log(e.currentTarget)
+	
+	searchValue = document.querySelector(".searchValue").value
+	typeValue = document.querySelector(".selectTypeVal").value
+	console.log(searchValue)
+	
+	document.querySelector("input[name='keyword']").value = searchValue
+	document.querySelector("input[name='type']").value = typeValue
+	
+	actionForm.submit()
+}, false)
+
+
+ document.querySelector(".searchValue").addEventListener("keypress", function(e){
+
+	if (e.key === "Enter") {
+		 e.preventDefault()
+    	console.log("Enter......")
+    	
+    	searchValue = document.querySelector(".searchValue").value
+    	typeValue = document.querySelector(".selectTypeVal").value
+    	console.log(searchValue)
+    	
+    	document.querySelector("input[name='keyword']").value = searchValue
+    	document.querySelector("input[name='type']").value = typeValue
+    	
+    	actionForm.submit()
+    }
+	
+	
+	
+}, false) 
+
+// read
+
+/* document.querySelector(".readBtn").addEventListener("click" , e => e.forEach{
+
+	console.log(e.target)
+	
+} , false) */
+
 
 </script>
 
-<script>
 
-function sendRead(param){
-	
-	console.log(param)
-	
-	self.location="/manager/read/"+param
-}
-
-
-
-
-</script>
 <%@ include file="../includes/footer.jsp"%>

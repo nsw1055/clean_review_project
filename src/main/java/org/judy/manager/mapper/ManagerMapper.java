@@ -13,6 +13,6 @@ public interface ManagerMapper {
 	
 	public void insertMan(Manager manager);
 	
-	public int totalMan();
+	public int totalMan(PageDTO pageDTO);
 	
 }

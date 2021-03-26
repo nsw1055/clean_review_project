@@ -27,6 +27,8 @@ public class ManagerDTO {
 	
 	String phone;
 	
+	String sname;
+	
 	Boolean enabled,approval;
 	
 	String logoImg;

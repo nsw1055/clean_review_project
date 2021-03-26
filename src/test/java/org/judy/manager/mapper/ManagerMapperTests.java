@@ -26,7 +26,7 @@ public class ManagerMapperTests {
 	@Test
 	public void testGetMemberList() {
 		log.info("12312312");
-		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).build();
+		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).type(null).keyword(null).build();
 		
 		log.info(mapper.getManagerList(pageDTO));
 	}
@@ -55,6 +55,7 @@ public class ManagerMapperTests {
 	
 	@Test
 	public void testTotal() {
-		log.info(mapper.totalMan());
+		PageDTO pageDTO = PageDTO.builder().type("s").keyword("후").build();
+		log.info(mapper.totalMan(pageDTO));
 	}
 }

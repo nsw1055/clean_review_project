@@ -4,9 +4,37 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.judy.manager.mapper.ManagerMapper">
 
+<sql id="search" >
+<where>
+		<if test="arr != null">
+  		<foreach collection="arr" item="item" separator="or" open="(" close=")">
+  		
+  		<if test="item == 'm'.toString()">
+  		<![CDATA[
+  			tm.mid like concat ('%' , #{keyword} , '%')
+  			]]> 
+  		</if>
+  		<if test="item == 's'.toString()">
+  			ts.sname like concat ('%' , #{keyword} , '%')
+  		</if>
+  		<if test="item == 'c'.toString()">
+  			tm.mid like concat ('%' , #{keyword} , '%')
+  		</if>
+  		</foreach>
+  		</if>
+</where>
+</sql>
+
 	<select id="getManagerList" resultType="org.judy.manager.domain.Manager">
 		<![CDATA[
-  		select * from tbl_manager order by regdate desc limit #{skip}, #{perSheet}
+  		select * from tbl_manager tm left join tbl_store ts on tm.mid = ts.mid 
+  		
+  		]]> 
+  		<if test="type != null">
+  		<include refid="search"/>
+  		</if>
+  		<![CDATA[
+  		order by regdate desc limit #{skip}, #{perSheet}
   		]]>
 	</select>
 	
@@ -27,8 +55,11 @@
 	
 	<select id="totalMan" resultType="int">
 	<![CDATA[
-  		select count(*) from tbl_manager
+  		select count(*) from tbl_manager tm left join tbl_store ts on tm.mid = ts.mid
   		]]>
+  		<if test="type != null">
+  		<include refid="search"/>
+  		</if>
 	</select>
 	
 	
