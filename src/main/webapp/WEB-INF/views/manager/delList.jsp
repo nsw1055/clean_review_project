@@ -8,16 +8,15 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
-					<div class="cardHeaderStyle card-header card-header-primary">
+						<div class="cardHeaderStyle card-header card-header-primary">
 						<div>
 							<h4 class="card-title ">Simple Table</h4>
 							<p class="card-category">Here is a subtitle for this table</p>
 						</div>
 						<div class="cardHeaderBtn">
-							<button type="submit" class="delListBtn btn btn-primary pull-right">Del List</button>
+							<button type="submit" class="allListBtn btn btn-primary pull-right">List</button>
 						</div>
 					</div>
-					
 					<div class="card-body">
 						<div class="listTop">
 						
@@ -36,10 +35,6 @@
 									<div class="ripple-container"></div>
 								</button>
 							</div>
-							
-							
-					
-							
 							<div class="selectPerSheet">
 								<select class="selectPerSheet custom-select">
 									<option ${10 == pageDTO.perSheet ? "selected" : "" } value="10">10개씩</option>
@@ -84,11 +79,6 @@
 
 							<!-- pagination -->
 							<div>
-							
-								<div class="cardHeaderBtn">
-									<button type="submit" class="registerBtn btn btn-primary pull-right">Register</button>
-								</div>
-							
 								<ul class="pagination justify-content-center">
 									<c:if test="${pageMaker.prev}">
 										<li class="page-item"><a class="page-link"
@@ -119,7 +109,7 @@
 </div>
 
 
-<form class="actionForm" action="/admin/manager/list" method="get">
+<form class="actionForm" action="/admin/manager/delList" method="get">
 	<input type="hidden" name="page" value="${pageDTO.page}"> 
 	<input type="hidden" name="perSheet" value="${pageDTO.perSheet}">
 	<input type="hidden" name="type" value="${pageDTO.type}">
@@ -251,21 +241,12 @@ document.querySelectorAll(".readBtn").forEach(function(event){
 	} , false)
 })
 
-//delList
-document.querySelector(".delListBtn").addEventListener("click", function(e){
+//allList
+document.querySelector(".allListBtn").addEventListener("click", function(e){
 	e.preventDefault()
 	
-	location.href="/admin/manager/delList"
+	location.href="/admin/manager/list"
 })
-
-// register
-
-document.querySelector(".registerBtn").addEventListener("click" , function(e){
-	
-	actionForm.setAttribute("action" , "/admin/manager/register")
-	actionForm.submit()
-	
-} , false)
 
 
 </script>

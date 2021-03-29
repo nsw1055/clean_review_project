@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.judy.common.util.PageDTO;
+import org.judy.manager.domain.Manager;
 import org.judy.manager.dto.ManagerDTO;
 import org.judy.manager.mapper.ManagerMapper;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,15 @@ public class ManagerServiceImpl implements ManagerService {
 	
 	}
 
+
+	@Override
+	public List<ManagerDTO> delManagerList(PageDTO pageDTO) {
+		return mapper.delManagerList(pageDTO).stream().map(manager -> {
+			return toDTO(manager);
+		}).collect(Collectors.toList());
+	}
+	
+	
 	@Override
 	public List<ManagerDTO> getManagerList(PageDTO pageDTO) {
 		return mapper.getManagerList(pageDTO).stream().map(manager -> {
@@ -37,11 +47,26 @@ public class ManagerServiceImpl implements ManagerService {
 	}
 
 	@Override
-	public int totalMan() {
+	public int totalMan(PageDTO pageDTO) {
 		log.info("totalMan..........");
-		return mapper.totalMan();
+		return mapper.totalMan(pageDTO);
 	}
-	
+
+	@Override
+	public void enabled(String mid) {
+		log.info("enabled...........");
+		mapper.enabled(mid);
+	}
+
+
+	@Override
+	public void registerMan(ManagerDTO managerDTO) {
+		log.info("registerMan.....");
+		Manager manager = toDomain(managerDTO);
+		mapper.registerMan(manager);
+		
+	}
+
 
 	
 

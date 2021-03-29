@@ -9,10 +9,16 @@ public interface ManagerMapper {
 
 	public List<Manager> getManagerList(PageDTO pageDTO);
 	
+	public List<Manager> delManagerList(PageDTO pageDTO);
+	
 	public Manager selectOne(String mid);
 	
-	public void insertMan(Manager manager);
+	public void registerMan(Manager manager);
 	
-	public int totalMan();
+	public int totalMan(PageDTO pageDTO);
+	
+	public void deleteMan(String mid);
+	
+	public int enabled(String mid);
 	
 }

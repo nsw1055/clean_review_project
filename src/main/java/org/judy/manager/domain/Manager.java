@@ -11,6 +11,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import lombok.Builder.Default;
 
 @Data
 @AllArgsConstructor
@@ -25,10 +26,17 @@ public class Manager {
 	
 	String phone;
 	
-	Boolean enabled,approval;
+	String sname;
+	
+	@Default
+	Boolean enabled = false;
+	@Default
+	Boolean approval = false;
 	
 	String logoImg;
 	
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
 	Date regdate, updatedate;
+	
+	
 }

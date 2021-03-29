@@ -53,56 +53,51 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label class="bmd-label-floating">매장명</label> <input
-											type="text" class="form-control" readonly="readonly" value=${manager.sname }>
+											type="text" class="form-control" >
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label class="bmd-label-floating">ID</label> <input
-											type="text" class="form-control" readonly="readonly" name='mid' value=${manager.mid }>
+											type="text" class="form-control" >
 									</div>
 								</div>
-								
+								</div>
+								<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<label class="bmd-label-floating">Phone</label> <input
-											type="text" class="form-control" readonly="readonly" value =${manager.phone }>
+											type="text" class="form-control">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label class="bmd-label-floating">Email address</label> 
-										<input type="email" class="form-control" readonly="readonly" value=${manager.email }>
+										<input type="email" class="form-control">
 									</div>
 								</div>
-							</div>
+								</div>
+								<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="bmd-label-floating">Address</label> <input
+											type="text" class="form-control">
+									</div>
+								</div>
+								</div>
+							
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<label class="bmd-label-floating">가입일</label> <input
-											type="text" class="form-control" readonly="readonly" value=${manager.regdate }>
+										<label class="bmd-label-floating">LogoImg</label> <input
+											type="text" class="form-control">
 									</div>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										
-											<label class="bmd-label-floating">enabled</label> 
-											
-											<input type="text" class="form-control" readonly="readonly" value =${manager.enabled == false ? "승인되지&nbsp않음" :" 승인됨" }>
-										
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<label class="bmd-label-floating">approval</label> <input
-											type="text" class="form-control" readonly="readonly" value="승인되지 않은 사용자 입니다.">
-									</div>
-								</div>
-							</div>
-							<button type="submit" class="delBtn btn btn-${manager.enabled == false ? 'primary' : 'danger' } btn-round pull-right">${manager.enabled == false ? "등록" : "삭제" }</button>
-							<button type="submit" class="modBtn btn btn-primary btn-round pull-right">수정</button>
+							
+							<button type="submit" class="modBtn btn btn-primary btn-round pull-right">취소</button>
+							<button type="submit" class="modBtn btn btn-danger btn-round pull-right">등록</button>
+							
 							
 							<div class="clearfix"></div>
 						</form>

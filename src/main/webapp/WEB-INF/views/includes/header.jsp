@@ -16,25 +16,27 @@ The above copyright notice and this permission notice shall be included in all c
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="/resources/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="/resources/assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../resources/assets/img/apple-icon.png">
+<!--   <link rel="icon" type="image/png" href="../resources/assets/img/favicon.png"> -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard by Creative Tim
+    Judy`s Project
   </title>
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
+  <link href="../resources/assets/css/judyCustom.css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
-  <link href="/resources/assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
+  <link href="../resources/assets/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="/resources/assets/demo/demo.css" rel="stylesheet" />
+  <link href="../resources/assets/demo/demo.css" rel="stylesheet" />
+  
 </head>
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="orange" data-background-color="white">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
@@ -52,7 +54,7 @@ The above copyright notice and this permission notice shall be included in all c
             </a>
           </li>
           <li class="nav-item active ">
-            <a class="nav-link" href="/member/list">
+            <a class="nav-link" href="/admin/manager/list">
               <i class="material-icons">content_paste</i>
               <p>회원관리</p>
             </a>

@@ -1,6 +1,9 @@
-package org.judy.time.mapper;
+package org.judy.store.service;
 
 import org.judy.common.CommonConfig;
+import org.judy.manager.config.ManagerConfig;
+import org.judy.store.config.StoreConfig;
+import org.judy.store.mapper.StoreMapperTests;
 import org.judy.time.config.TimeConfig;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,17 +14,17 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import lombok.extern.log4j.Log4j;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {CommonConfig.class , TimeConfig.class})
+@ContextConfiguration(classes = {CommonConfig.class, ManagerConfig.class , TimeConfig.class , StoreConfig.class})
 @Log4j
-public class TimeMapperTests {
+public class StoreServiceTests {
 
 	@Autowired
-	private TimeMapper mapper;
+	private StoreService service;
+	
 	
 	@Test
-	public void testMapper() {
-		log.info("timeTest......");
-		log.info(mapper.getClass().getName());
-		log.info(mapper.getTime());
+	public void testGetStore() {
+		log.info(service.getStore("user147"));
 	}
+	
 }

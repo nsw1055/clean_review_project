@@ -3,6 +3,7 @@ package org.judy.manager.service;
 import org.judy.common.CommonConfig;
 import org.judy.common.util.PageDTO;
 import org.judy.manager.config.ManagerConfig;
+import org.judy.manager.dto.ManagerDTO;
 import org.judy.store.config.StoreConfig;
 import org.judy.time.config.TimeConfig;
 import org.junit.Test;
@@ -25,7 +26,7 @@ public class ManagerServiceTests {
 	@Test
 	public void getManagerTest() {
 		
-		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).build();
+		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).type(null).keyword(null).build();
 		
 		log.info("------------");
 		log.info(service);
@@ -38,8 +39,22 @@ public class ManagerServiceTests {
 	}
 	@Test
 	public void testTotal() {
-		log.info(service.totalMan());
+		PageDTO pageDTO = PageDTO.builder().page(1).perSheet(10).type("s").keyword("후").build();
+		log.info(service.totalMan(pageDTO));
 		
+	}
+	
+	@Test
+	public void testEnabled() {
+		service.enabled("user147");
+		log.info(service.selectOne("user147"));
+	}
+	
+	@Test
+	public void testRegister() {
+		
+		ManagerDTO dto = ManagerDTO.builder().mid("user300").mpw("123123123").sname("맨야시노기").phone("010201929").email("sdjflkdsj@gmail.com").logoImg("kdsjfkl").build();
+		service.registerMan(dto);
 	}
 	
 }
