@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="clean_review:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="741c26d1-a847-43a9-9b6f-d357126a686b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/assets/css/material-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/assets/css/material-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/CommonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/CommonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/ServletConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/ServletConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/aop/LogAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/aop/LogAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageDTO$PageDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageDTO$PageDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageMaker$PageMakerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageMaker$PageMakerBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/common/util/PageMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/main/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/main/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/config/ManagerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/config/ManagerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/controller/ManagerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/controller/ManagerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/domain/Manager$ManagerBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/domain/Manager$ManagerBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/domain/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/domain/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/dto/ManagerDTO$ManagerDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/dto/ManagerDTO$ManagerDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/dto/ManagerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/dto/ManagerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/service/ManagerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/service/ManagerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/manager/service/ManagerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/manager/service/ManagerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/config/StoreConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/config/StoreConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/domain/Store$StoreBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/domain/Store$StoreBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/domain/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/domain/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/dto/StoreDTO$StoreDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/dto/StoreDTO$StoreDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/dto/StoreDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/dto/StoreDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/service/StoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/service/StoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/store/service/StoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/store/service/StoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/time/config/TimeConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/time/config/TimeConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/time/controller/TimeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/time/controller/TimeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/judy/time/service/TimeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/judy/time/service/TimeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/manager/controller/ManagerControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/manager/controller/ManagerControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/manager/mapper/ManagerMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/manager/mapper/ManagerMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/manager/service/ManagerServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/manager/service/ManagerServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/store/mapper/StoreMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/store/mapper/StoreMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/store/service/StoreServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/store/service/StoreServiceTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/time/controller/TimeControllerTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/time/controller/TimeControllerTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/time/mapper/TimeMapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/time/mapper/TimeMapperTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/judy/time/service/TimeServiceTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/judy/time/service/TimeServiceTests.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1qS9iKgO32gdqKVeIJrKHJ3wVEh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/clean_review" />
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.412">
+    <configuration name="generated-requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 9.0.412" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.412" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/admin/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="clean_review:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/admin" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="d2bfa653-f5e2-4c3c-bb82-705b19a56487" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63130" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="clean_review:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests#4" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.412" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests#4" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="741c26d1-a847-43a9-9b6f-d357126a686b" name="Default Changelist" comment="" />
+      <created>1617062253974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617062253974</updated>
+      <workItem from="1617062255453" duration="28000" />
+      <workItem from="1617062309098" duration="1763000" />
+      <workItem from="1617150944774" duration="5793000" />
+      <workItem from="1617322510493" duration="3168000" />
+      <workItem from="1617930023132" duration="9000" />
+      <workItem from="1618185817906" duration="1432000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
